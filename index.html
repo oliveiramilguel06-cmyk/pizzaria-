@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas do Matheus - A melhor pizza da cidade!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Menu fixo no topo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🍕 Pizzas do Matheus</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-section="cardapio">Cardápio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home" class="section active">
+        <!-- Banner principal com imagem de pizza -->
+        <div class="hero">
+            <div class="hero-overlay">
+                <div class="container hero-content">
+                    <h2 class="hero-title">A melhor pizza da cidade!</h2>
+                    <p class="hero-subtitle">Sabor autêntico, ingredientes frescos e entrega rápida</p>
+                    <!-- Botão WhatsApp -->
+                    <a href="https://wa.me/5599999999999" target="_blank" class="btn-whatsapp">
+                        📱 Fazer Pedido no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção adicional da Home -->
+        <div class="container about-section">
+            <h3>Por que escolher a Pizzas do Matheus?</h3>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🍕</div>
+                    <h4>Massa Artesanal</h4>
+                    <p>Feita diariamente com ingredientes selecionados</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Entrega Rápida</h4>
+                    <p>Pizza quentinha na sua casa em minutos</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⭐</div>
+                    <h4>Qualidade Garantida</h4>
+                    <p>Ingredientes frescos e sabor incomparável</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Cardápio -->
+    <section id="cardapio" class="section">
+        <div class="container">
+            <h2 class="section-title">Nosso Cardápio</h2>
+            <p class="section-subtitle">Escolha seu sabor favorito!</p>
+            
+            <!-- Grid de pizzas -->
+            <div class="menu-grid">
+                <!-- Pizza 1: Mussarela -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/mussarela.jpg" alt="Pizza de Mussarela">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza de Mussarela</h3>
+                        <p class="menu-item-description">Queijo mussarela de primeira qualidade, molho de tomate caseiro e orégano</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 29,90</span>
+                            <button class="btn-buy" data-pizza="Mussarela" data-price="29,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 2: Calabresa -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/calabresa.jpg" alt="Pizza de Calabresa">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza de Calabresa</h3>
+                        <p class="menu-item-description">Calabresa especial, cebola, mussarela, molho de tomate e azeitonas</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 34,90</span>
+                            <button class="btn-buy" data-pizza="Calabresa" data-price="34,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 3: Portuguesa -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/portuguesa.jpg" alt="Pizza Portuguesa">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Portuguesa</h3>
+                        <p class="menu-item-description">Presunto, mussarela, ovos, cebola, azeitona, molho de tomate e orégano</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 39,90</span>
+                            <button class="btn-buy" data-pizza="Portuguesa" data-price="39,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 4: Margherita -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/margherita.jpg" alt="Pizza Margherita">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Margherita</h3>
+                        <p class="menu-item-description">Molho de tomate, mussarela de búfala, manjericão fresco e azeite de oliva</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 36,90</span>
+                            <button class="btn-buy" data-pizza="Margherita" data-price="36,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 5: Pepperoni -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/pepperoni.jpg" alt="Pizza Pepperoni">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Pepperoni</h3>
+                        <p class="menu-item-description">Generosas fatias de pepperoni, mussarela e molho de tomate especial</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 38,90</span>
+                            <button class="btn-buy" data-pizza="Pepperoni" data-price="38,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 6: Quatro Queijos -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/quatro_queijos.jpg" alt="Pizza Quatro Queijos">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Quatro Queijos</h3>
+                        <p class="menu-item-description">Mussarela, gorgonzola, provolone e parmesão gratinado</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 42,90</span>
+                            <button class="btn-buy" data-pizza="Quatro Queijos" data-price="42,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 7: Frango com Catupiry -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/frango_catupiry.jpg" alt="Pizza Frango com Catupiry">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Frango com Catupiry</h3>
+                        <p class="menu-item-description">Frango desfiado temperado, catupiry cremoso e mussarela</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 37,90</span>
+                            <button class="btn-buy" data-pizza="Frango com Catupiry" data-price="37,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 8: Bacon -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/bacon.jpg" alt="Pizza Bacon">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Bacon</h3>
+                        <p class="menu-item-description">Bacon crocante, mussarela, cebola caramelizada e molho especial</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 40,90</span>
+                            <button class="btn-buy" data-pizza="Bacon" data-price="40,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 9: Napolitana -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/napolitana.jpg" alt="Pizza Napolitana">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Napolitana</h3>
+                        <p class="menu-item-description">Mussarela, tomate fatiado, parmesão, alho e manjericão</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 35,90</span>
+                            <button class="btn-buy" data-pizza="Napolitana" data-price="35,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 10: Vegetariana -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/vegetariana.jpg" alt="Pizza Vegetariana">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Vegetariana</h3>
+                        <p class="menu-item-description">Brócolis, palmito, tomate, cebola, azeitona, pimentão e champignon</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 36,90</span>
+                            <button class="btn-buy" data-pizza="Vegetariana" data-price="36,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 11: Lombo Canadense -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/lombo_canadense.jpg" alt="Pizza Lombo Canadense">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Lombo Canadense</h3>
+                        <p class="menu-item-description">Lombo canadense, mussarela, catupiry e molho de tomate</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 39,90</span>
+                            <button class="btn-buy" data-pizza="Lombo Canadense" data-price="39,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 12: Atum -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/atum.jpg" alt="Pizza Atum">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza Atum</h3>
+                        <p class="menu-item-description">Atum desfiado, cebola, azeitona, molho de tomate e mussarela</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 41,90</span>
+                            <button class="btn-buy" data-pizza="Atum" data-price="41,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza 13: Chocolate -->
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="images/chocolate.jpg" alt="Pizza de Chocolate">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Pizza de Chocolate</h3>
+                        <p class="menu-item-description">Chocolate ao leite derretido, morango fatiado e granulado</p>
+                        <div class="menu-item-footer">
+                            <span class="price">R$ 32,90</span>
+                            <button class="btn-buy" data-pizza="Chocolate" data-price="32,90">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Pizzas do Matheus - Todos os direitos reservados</p>
+            <p>📍 Rua das Pizzas, 123 - Centro | 📞 (99) 99999-9999</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Seleção de Tamanho -->
+    <div id="sizeModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Escolha o tamanho da sua pizza</h2>
+            <p class="modal-subtitle" id="modalPizzaName"></p>
+            
+            <div class="size-options">
+                <!-- Opção Pequena -->
+                <div class="size-option" data-size="pequena">
+                    <div class="size-header">
+                        <span class="size-icon">🍕</span>
+                        <h3>Pequena</h3>
+                    </div>
+                    <div class="size-info">
+                        <p class="size-details">4 fatias • 25cm</p>
+                        <p class="size-serves">Serve 1 pessoa</p>
+                    </div>
+                    <div class="size-price" id="price-pequena">R$ 40,00</div>
+                    <button class="btn-select-size" data-size="pequena">Selecionar</button>
+                </div>
+
+                <!-- Opção Média -->
+                <div class="size-option size-popular" data-size="media">
+                    <div class="popular-badge">Mais Pedido</div>
+                    <div class="size-header">
+                        <span class="size-icon">🍕🍕</span>
+                        <h3>Média</h3>
+                    </div>
+                    <div class="size-info">
+                        <p class="size-details">6 fatias • 30cm</p>
+                        <p class="size-serves">Serve 2-3 pessoas</p>
+                    </div>
+                    <div class="size-price" id="price-media">R$ 60,00</div>
+                    <button class="btn-select-size" data-size="media">Selecionar</button>
+                </div>
+
+                <!-- Opção Grande -->
+                <div class="size-option" data-size="grande">
+                    <div class="size-header">
+                        <span class="size-icon">🍕🍕🍕</span>
+                        <h3>Grande</h3>
+                    </div>
+                    <div class="size-info">
+                        <p class="size-details">8 fatias • 35cm</p>
+                        <p class="size-serves">Serve 3-4 pessoas</p>
+                    </div>
+                    <div class="size-price" id="price-grande">R$ 80,00</div>
+                    <button class="btn-select-size" data-size="grande">Selecionar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
